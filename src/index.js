@@ -25,7 +25,7 @@ class Board extends React.Component {
 		);
 	}
 
-	// Render ra các ô
+	// Render ra các ô(1 dòng for 3)
 	renderSquares(n) {
 		let squares = [];
 		for (let i = n; i < n + 3; i++) {
@@ -34,7 +34,7 @@ class Board extends React.Component {
 		return squares;
 	}
 
-	// Render ra các ô trên 1 hàng
+	// Render ra các ô trên 1 hàng(1 dòng for 1)
 	renderRows(i) {
 		return <div className="board-row">{this.renderSquares(i)}</div>;
 	}
